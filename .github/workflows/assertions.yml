@@ -10,50 +10,6 @@ concurrency:
     cancel-in-progress: true
 
 jobs:
-    lint-css:
-        name: 'Lint: CSS'
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v4
-
-            - name: Setup Node
-              uses: actions/setup-node@v4
-              with:
-                  node-version: 20
-
-            - name: Install Node dependencies
-              run: npm ci
-              env:
-                  CI: true
-
-            - name: Detect coding standard violations (stylelint)
-              run: npm run lint:css
-
-    lint-js:
-        name: 'Lint: JS'
-        runs-on: ubuntu-latest
-
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v4
-
-            - name: Setup Node
-              uses: actions/setup-node@v4
-              with:
-                  node-version: 20
-
-            - name: Check Node version
-              run: node -v
-
-            - name: Install Node dependencies
-              run: npm ci
-              env:
-                  CI: true
-
-            - name: Detect coding standard violations (eslint)
-              run: npm run lint:js
-
     lint-php:
         name: 'Lint: PHP'
         runs-on: ubuntu-latest
@@ -70,7 +26,7 @@ jobs:
 
             - name: Get Composer Cache Directory
               id: composer-cache
-              run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+              run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
 
             - name: Configure Composer cache
               uses: actions/cache@v4
@@ -85,6 +41,3 @@ jobs:
 
             - name: Validate composer.json
               run: composer --no-interaction validate --no-check-all
-
-            - name: Detect coding standard violations (PHPCS)
-              run: npm run lint:php

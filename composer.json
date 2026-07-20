@@ -13,7 +13,7 @@
 			"role": "Developer Emeritus"
 		}
 	],
-	"license": "GPL-2.0+",
+	"license": "GPL-2.0-or-later",
 	"require": {
 		"php": ">=7.4",
 		"robertdevore/wpcom-check": "^1.0"
