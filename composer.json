@@ -1,5 +1,21 @@
 {
-    "require": {
-        "robertdevore/wpcom-check": "^1.0"
-    }
+	"name": "webdevstudios/slop-stopper",
+	"description": "Checks content submitted by non-admin users for AI-generated phrases and flags posts for admin review.",
+	"type": "wordpress-plugin",
+	"authors": [
+		{
+			"name": "WebDevStudios",
+			"email": "hosting@webdevstudios.com",
+			"role": "Developer"
+		},
+		{
+			"name": "Robert DeVore",
+			"role": "Developer Emeritus"
+		}
+	],
+	"license": "GPL-2.0+",
+	"require": {
+		"php": ">=7.4",
+		"robertdevore/wpcom-check": "^1.0"
+	}
 }

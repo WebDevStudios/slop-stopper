@@ -1,5 +1,7 @@
 # Slop Stopper
 
+[![WebDevStudios. Your Success is Our Mission.](https://webdevstudios.com/wp-content/uploads/2024/02/wds-banner.png)](https://webdevstudios.com/contact/)
+
 ## Overview
 
 **Slop Stopper** is a WordPress® plugin that scans submitted content for AI-generated phrases and flags questionable posts for administrator review. 
@@ -85,6 +87,20 @@ Contributions are welcome! If you'd like to improve this plugin:
 2. Create a new branch for your feature or bug fix (ex: `feature/feature-name`).
 3. Submit a pull request.
 
+## Coding Standards
+
+Please adhere to the following coding standards when contributing:
+
+- [WordPress CSS Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/css/)
+- [WordPress HTML Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/html/)
+- [WordPress JavaScript Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/)
+- [WordPress PHP Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/)
+- [WordPress Markdown Style Guide](https://developer.wordpress.org/coding-standards/styleguide/)
+
 ## License
 
 Slop Stopper is licensed under the [GPL-2.0+ License](http://www.gnu.org/licenses/gpl-2.0.txt).
+
+## Acknowledgments
+
+Special thanks to [Robert DeVore](https://github.com/robertdevore/) for the initial creation and maintenance of this plugin.
