@@ -3,7 +3,7 @@
 /**
  * The plugin bootstrap file
  *
- * @link              https://robertdevore.com
+ * @link              https://webdevstudios.com/
  * @since             1.0.0
  * @package           Stats_For_WordPress
  *
@@ -11,15 +11,15 @@
  *
  * Plugin Name: Slop Stopper
  * Description: Checks content submitted by non-admin users for AI-generated phrases and flags posts for admin review.
- * Plugin URI:  https://github.com/robertdevore/slop-stopper/
+ * Plugin URI:  https://github.com/WebDevStudios/slop-stopper/
  * Version:     1.0.0
- * Author:      Robert DeVore
- * Author URI:  https://robertdevore.com/
+ * Author:      WebDevStudios
+ * Author URI:  https://webdevstudios.com/
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: slop-stopper
  * Domain Path: /languages
- * Update URI:  https://github.com/robertdevore/slop-stopper/
+ * Update URI:  https://github.com/WebDevStudios/slop-stopper/
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -31,7 +31,7 @@ require 'vendor/plugin-update-checker/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $myUpdateChecker = PucFactory::buildUpdateChecker(
-    'https://github.com/robertdevore/slop-stopper/',
+    'https://github.com/WebDevStudios/slop-stopper/',
     __FILE__,
     'slop-stopper'
 );
