@@ -26,7 +26,7 @@ This makes sure that user-generated content meets quality standards and prevents
 ### Install from GitHub
 
 1. **Download the Plugin:**
-    - Go to the Slop Stopper [GitHub Repository](https://github.com/robertdevore/slop-stopper/) (you are here)
+    - Go to the Slop Stopper [GitHub Repository](https://github.com/WebDevStudios/slop-stopper/) (you are here)
     - Click on the **Code** button and download the ZIP file.
 
 2. **Upload to WordPress®:**
